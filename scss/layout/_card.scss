@@ -1,0 +1,24 @@
+body {
+  font-family: $font-dm-sans;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    background-color: $colorado-bronze;
+    border-radius: 16px;
+
+    &-balance {
+      &__title {
+      }
+      &__profit {
+      }
+    }
+
+    &-icon {
+      padding: 24px;
+    }
+  }
+  .image {
+    width: 54px;
+    height: auto;
+  }
+}

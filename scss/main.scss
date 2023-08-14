@@ -1,0 +1,10 @@
+@import "./abstracts/typrograpthy";
+@import "./abstracts/variables";
+@import "./layout/card";
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
