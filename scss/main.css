@@ -1,16 +1,124 @@
-.header {
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: #f7e9dc;
+}
+body .image {
+  width: 54px;
+  height: auto;
+}
+body .header {
   display: flex;
   justify-content: space-between;
+  border-radius: 12px;
   background-color: #ed755e;
-  border-radius: 15px;
+  color: #ffeedc;
 }
-.header-icon {
-  padding: 20px;
+body .header-balance {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px 160px 0px 20px;
 }
-
-.image {
-  width: 50px;
-  height: auto;
+body .header-balance__title {
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+body .header-balance__profit {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fffcf7;
+}
+body .header-icon {
+  padding: 24px;
+}
+body .container {
+  padding: 24px;
+  margin-top: 16px;
+  border-radius: 16px;
+  background-color: #fffcf7;
+}
+body .container .trunk-title {
+  margin-bottom: 44px;
+  font-size: 20px;
+  font-weight: 700;
+}
+body .container .trunk-table {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+body .container .trunk-table_col {
+  width: 28px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: #ed755e;
+}
+body .container .trunk-table_col--mon {
+  height: 28px;
+}
+body .container .trunk-table_col--tue {
+  height: 57px;
+}
+body .container .trunk-table_col--wed {
+  height: 87px;
+  background-color: #76b5bc;
+}
+body .container .trunk-table_col--thu {
+  height: 51px;
+}
+body .container .trunk-table_col--fri {
+  height: 38px;
+}
+body .container .trunk-table_col--sat {
+  height: 72px;
+}
+body .container .trunk-table_col--sun {
+  height: 42px;
+}
+body .container .week {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+body .container .week-day {
+  width: 28px;
+  font-size: 8px;
+  text-align: center;
+  padding: 4px 0px;
+  color: #99918c;
+}
+body .container .line {
+  height: 0.1px;
+  width: auto;
+  background-color: #f7e9dc;
+  margin: 16px 0px;
+}
+body .container .footer {
+  display: flex;
+  justify-content: space-between;
+}
+body .container .footer .month-title {
+  font-size: 12px;
+  color: #9d9790;
+}
+body .container .footer .month-profit {
+  font-size: 32px;
+  font-weight: 800;
+}
+body .container .footer .ratio {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+body .container .footer .ratio-value {
+  font-size: 12px;
+  font-weight: 600;
+}
+body .container .footer .ratio-explanation {
+  font-size: 12px;
+  color: #9d9790;
 }
 
 body {

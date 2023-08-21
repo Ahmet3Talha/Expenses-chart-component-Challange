@@ -1,15 +1,31 @@
 body {
   font-family: $font-dm-sans;
+  background-color: $cotton-sheets;
+  .image {
+    width: 54px;
+    height: auto;
+  }
   .header {
     display: flex;
     justify-content: space-between;
+    border-radius: 12px;
     background-color: $colorado-bronze;
-    border-radius: 16px;
+    color: $enokitake-mushroom;
 
     &-balance {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0px 160px 0px 20px;
+
       &__title {
+        font-size: 12px;
+        margin-bottom: 8px;
       }
       &__profit {
+        font-size: 20px;
+        font-weight: 600;
+        color: $eyeball;
       }
     }
 
@@ -17,8 +33,99 @@ body {
       padding: 24px;
     }
   }
-  .image {
-    width: 54px;
-    height: auto;
+  .container {
+    padding: 24px;
+    margin-top: 16px;
+    border-radius: 16px;
+    background-color: $eyeball;
+    .trunk {
+      &-title {
+        margin-bottom: 44px;
+        font-size: 20px;
+        font-weight: 700;
+      }
+      &-table {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        &_col {
+          width: 28px;
+          height: 120px;
+          border-radius: 4px;
+          background-color: $colorado-bronze;
+          &--mon {
+            height: 28px;
+          }
+          &--tue {
+            height: 57px;
+          }
+          &--wed {
+            height: 87px;
+            background-color: $aqua-blue;
+          }
+          &--thu {
+            height: 51px;
+          }
+          &--fri {
+            height: 38px;
+          }
+          &--sat {
+            height: 72px;
+          }
+          &--sun {
+            height: 42px;
+          }
+        }
+      }
+    }
+    .week {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+
+      &-day {
+        width: 28px;
+        font-size: 8px;
+        text-align: center;
+        padding: 4px 0px;
+        color: #99918c;
+      }
+    }
+    .line {
+      height: 0.1px;
+      width: auto;
+      background-color: $cotton-sheets;
+      margin: 16px 0px;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+
+      .month {
+        &-title {
+          font-size: 12px;
+          color: $acier;
+        }
+        &-profit {
+          font-size: 32px;
+          font-weight: 800;
+        }
+      }
+      .ratio {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        &-value {
+          font-size: 12px;
+          font-weight: 600;
+        }
+        &-explanation {
+          font-size: 12px;
+          color: $acier;
+        }
+      }
+    }
   }
 }
